@@ -10,21 +10,34 @@
         
     </head>
     <body>
-         
+        
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#" th:href="@{/}">                  
+                    <img src="/img/logo-salud.png" alt="Bootstrap" width="60" height="48">
+                </a>
+            </div>
+        </nav>
+        
+        <div align="center">
+            <a href="/"><img width="240" height="192"
+                             src="/img/imagen-registroPaciente.png"
+                             alt="Pagina principal"></a>
+        </div>
+        <p align="center" >Complete el Formulario de Paciente</p>
+        <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+             
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed"
                             data-toggle="collapse" data-target="#navbar" aria-expanded="false"
                             aria-controls="navbar">
-                        <span class="sr-only"></span> <span
-                            class="icon-bar"></span> <span class="icon-bar"></span> <span
-                            class="icon-bar"></span>
-                            <a class="navbar-brand" href="#" th:href="@{/}">Regresar a la Portada Principal</a>
+                        
                     </button>
-                    
+                    <a class="navbar-brand" href="#" th:href="@{/}">Regresar a la Portada Principal</a>
                 </div>
             </div>
-        </nav>
+        </nav>-->
        
 
         <div class="container-fluid m-5 contenedor">
@@ -45,63 +58,63 @@
                 para que nosotros podamos tomarla, guardarla o manipularla segun deseemos-->
                 <div class="form-group my-3"> 
                     <label class="mb-2">Apellido</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
-                    <input type="text" class="form-control" name="apellido" placeholder="Ingrese su apellido">
+                    
+                    <input type="text" class="form-control" name="apellido" placeholder="Ingrese su Apellido">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Numero Dni</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
-                    <input type="text" class="form-control" name="dni" pattern="[0-9]{8}" required placeholder="dni">
+                    
+                    <input type="text" class="form-control" name="dni" pattern="[0-9]{8}" required placeholder="Ingrese su Dni">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Sexo</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
+                    
                     <input type="text" class="form-control" name="sexo" placeholder="Masculino o femenino">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Obra Social</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
-                    <input type="text" class="form-control" name="obraSocialPaciente" placeholder="Ingrese obra social">
+                   
+                    <input type="text" class="form-control" name="obraSocialPaciente" placeholder="Ingrese su obra social">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Numero de Afiliado</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
-                    <input type="text" class="form-control" name="numeroDeAfiliado" placeholder="Ingrese numero afiliado">
+                    
+                    <input type="text" class="form-control" name="numeroDeAfiliado" placeholder="Ingrese su numero afiliado">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Email</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
+                   
                     <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Telefono</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
+                    
                     <input type="text" class="form-control" name="telefono" placeholder="celular o fijo" pattern="[0-9]{8}" required>
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Contraseña</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
+                   
                     <input type="password" class="form-control" name="password" placeholder="password">
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Confirmar Contraseña</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
+                    
                     <input type="password" class="form-control" name="password2" placeholder="password">
                     <div class="invalid-feedback">Las contraseñas no coinciden.</div>
                 </div>
 
                 <div class="form-group my-3"> 
                     <label class="mb-2">Motivo de Consulta</label> 
-                    <!-- input es para ingresar el nombre del autor  -->
-                    <input type="text" class="form-control" name="motivoConsulta" placeholder="Ingrese motivo de consulta">
+                   
+                    <input type="text" class="form-control" name="motivoConsulta" placeholder="Ingrese su motivo de consulta">
 
                 </div>
                 <button type="submit" class="btn btn-primary mt-3 botones">REGISTRAR</button>

@@ -35,15 +35,21 @@
                 </div>
             </div>
         </nav>
+        
         <br>
         <br>
         <br>
-
-
+        <br>
+        <div align="center">
+            <a href="/"><img width="120" height="96"
+                             src="/img/logo-salud.png"
+                             alt="Pagina principal"></a>
+        </div>
+        <br>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <h3>Iniciar Sesión</h3>
+                    <h4>Iniciar Sesión</h4>
                     <form th:action="@{/login}" method="post">
 
                         <div th:if=${param.error}>
